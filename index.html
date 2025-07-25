@@ -84,27 +84,43 @@
   </section>
 
   <!-- Placeholder Projets -->
-  <section id="projets" class="container py-5 text-light">
-    <h2 class="mb-4">Mes projets</h2>
-    <div class="container">
-<div class="row">
-<div class="col-md-6 mb-4">
-<div class="card bg-dark text-white p-3" data-aos="zoom-in">
-<h5 class="card-title">Projet Année 1</h5>
-<p class="card-text">Description rapide du projet ici.</p>
-<a href="https://github.com/tonnomutilisateur/projet1" class="btn btn-outline-info" target="_blank">Voir</a>
-</div>
-</div>
-<div class="col-md-6 mb-4">
-<div class="card bg-dark text-white p-3" data-aos="zoom-in">
-<h5 class="card-title">Projet Année 2</h5>
-<p class="card-text">Description rapide du projet ici.</p>
-<a href="https://github.com/tonnomutilisateur/projet2" class="btn btn-outline-info" target="_blank">Voir</a>
-</div>
-</div>
-</div>
-</div>
-  </section>
+ <section id="projets" class="container py-5 text-light">
+  <h2 class="mb-4">Mes projets</h2>
+  <div class="container">
+    <div class="row">
+    
+      <!-- Projet Année 1 -->
+      <div class="col-md-6 mb-4">
+        <div class="card bg-dark text-white p-3" data-aos="zoom-in">
+          <h5 class="card-title">Projet Année 1</h5>
+          <p class="card-text">Description rapide du projet ici.</p>
+          <button class="btn btn-outline-info" onclick="toggleDetails('projet1')">Voir</button>
+          <div id="projet1" class="projet-details mt-3" style="display: none;">
+            <p>Voici une description plus complète du projet Année 1. Tu peux ajouter plus de texte, images, ou même des vidéos ici.</p>
+            <img src="chemin/vers/ton/image.jpg" alt="Capture projet 1" class="img-fluid rounded mb-2">
+            <a href="#" onclick="event.preventDefault(); toggleDetails('projet1')" class="btn btn-sm btn-secondary">Fermer</a>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet Année 2 -->
+      <div class="col-md-6 mb-4">
+        <div class="card bg-dark text-white p-3" data-aos="zoom-in">
+          <h5 class="card-title">Projet Année 2</h5>
+          <p class="card-text">Description rapide du projet ici.</p>
+          <button class="btn btn-outline-info" onclick="toggleDetails('projet2')">Voir</button>
+          <div id="projet2" class="projet-details mt-3" style="display: none;">
+            <p>Contenu plus détaillé pour le projet Année 2.</p>
+            <a href="#" onclick="event.preventDefault(); toggleDetails('projet2')" class="btn btn-sm btn-secondary">Fermer</a>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
   
   <!-- Veille -->
   <section id="veille" class="container py-5 text-light">
@@ -150,5 +166,6 @@ LinkedIn : <i class="fab fa-linkedin"></i> <a href="https://fr.linkedin.com/in/i
   });
 </script>
 
+  <script src="script.js"></script>
 </body>
 </html>
