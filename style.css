@@ -3,7 +3,7 @@ html, body {
   padding: 0;
   height: 100%;
   font-family: 'Poppins', sans-serif;
-  background-color: #ffffff; /* Fond blanc */
+  background-color: #ffffff !important; /* Fond blanc */
   color: #212529 !important; /* Texte noir */
   scroll-behavior: smooth;
   position: relative;
