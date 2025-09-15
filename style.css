@@ -3,46 +3,53 @@ html, body {
   padding: 0;
   height: 100%;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  color: #f8f9fa !important; /* couleur claire par défaut */
+  background-color: #ffffff; /* Fond blanc */
+  color: #212529 !important; /* Texte noir */
   scroll-behavior: smooth;
   position: relative;
   padding-bottom: 120px;
 }
 
-/* Forcer la couleur claire sur les textes courants */
+/* Couleur texte par défaut */
 body, p, h1, h2, h3, h4, h5, h6, a, .lead {
-  color: #f8f9fa !important;
+  color: #212529 !important;
 }
 
-/* Section Hero spécifique */
+/* Hero section */
 #hero h1,
 #hero p {
-  color: #f8f9fa !important;
+  color: #212529 !important;
 }
 
+/* Navbar claire */
 nav.navbar {
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
+  background-color: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
+
+/* Liens de navigation */
 .navbar-dark .navbar-nav .nav-link {
-  color: #f8f9fa !important;
+  color: #212529 !important;
   transition: all 0.3s ease;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #4fc3f7 !important; /* bleu IT doux */
-  text-shadow: 0 0 8px rgba(79, 195, 247, 0.6) !important;
+  color: #b89b72 !important;
+  text-shadow: none !important;
 }
 
+/* Espacement */
 .spacer {
   height: 56px;
 }
 
+/* Sections */
 section {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -56,9 +63,10 @@ section {
   scroll-margin-top: 80px;
 }
 
+/* Boutons personnalisés */
 .btn-custom {
-  background-color: #4fc3f7 !important;
-  color: #000 !important;
+  background-color: #f5e6ca !important;
+  color: #212529 !important;
   border: none !important;
   padding: 12px 24px !important;
   border-radius: 30px !important;
@@ -69,13 +77,27 @@ section {
 }
 
 .btn-custom:hover {
-  background-color: #81d4fa !important;
+  background-color: #e2d4b7 !important;
   color: #000 !important;
   text-decoration: none;
 }
 
+/* Petit bouton personnalisé */
+.btn-custom.btn-sm {
+  padding: 6px 16px !important;
+  font-size: 0.85rem !important;
+}
+
+/* Accessibilité */
+.btn-custom:focus,
+a:focus {
+  outline: 2px dashed #b89b72;
+  outline-offset: 4px;
+}
+
+/* Titres sobres */
 h1, h2 {
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+  text-shadow: none;
 }
 
 .lead {
@@ -84,28 +106,31 @@ h1, h2 {
   margin-bottom: 20px;
 }
 
+/* Cartes fond clair */
 .card.bg-dark {
-  background-color: rgba(20, 20, 20, 0.85) !important;
+  background-color: #f8f8f8 !important;
   border-radius: 10px;
+  color: #212529 !important;
 }
 
+/* Barre de contact */
 #contact-bar {
   position: fixed;
   bottom: 60px;
   left: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  color: #4fc3f7;
+  background: #f5e6ca;
+  color: #212529;
   text-align: center;
   padding: 10px 0;
   font-weight: 600;
   z-index: 1100;
   font-size: 1rem;
-  box-shadow: 0 -2px 5px rgba(0,0,0,0.5);
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
 }
 
 #contact-bar a {
-  color: #4fc3f7;
+  color: #212529;
   text-decoration: none;
 }
 
@@ -113,27 +138,29 @@ h1, h2 {
   text-decoration: underline;
 }
 
+/* Footer */
 footer {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 60px;
-  background: rgba(0, 0, 0, 0.7);
-  color: #ccc;
+  background: #f0f0f0;
+  color: #666;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 0.9rem;
   z-index: 1100;
 }
+
+/* Effet machine à écrire */
 .typing {
-  border-right: 2px solid #4fc3f7;
+  border-right: 2px solid #b89b72;
   white-space: nowrap;
   overflow: hidden;
   width: 0;
   animation: typing 4s steps(50, end) forwards, blink-caret 0.75s step-end 5;
-  /* blink-caret joue 5 fois (4s / 0.75s environ) puis s’arrête */
   font-weight: 500;
   font-size: 1.25rem;
   max-width: 50ch;
@@ -147,36 +174,42 @@ footer {
 
 @keyframes blink-caret {
   0%, 100% { border-color: transparent; }
-  50% { border-color: #4fc3f7; }
+  50% { border-color: #b89b72; }
 }
+
+/* Couleur de marque */
 .brand-colored {
-  color: #4fc3f7 !important; /* Bleu IT doux */
+  color: #b89b72 !important;
   font-weight: 600;
   transition: color 0.3s ease-in-out;
 }
+
+/* Animation cartes */
 .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 10px 20px rgba(79, 195, 247, 0.4);
-  border: 1px solid rgba(79, 195, 247, 0.5);
+  box-shadow: 0 10px 20px rgba(184, 155, 114, 0.3);
+  border: 1px solid rgba(184, 155, 114, 0.4);
 }
+
+/* Bouton retour en haut */
 #backToTop {
   position: fixed;
   bottom: 80px;
   right: 30px;
   display: none;
-  background-color: #4fc3f7; /* bleu doux */
-  color: #000;
+  background-color: #f5e6ca;
+  color: #212529;
   border: none;
   border-radius: 50%;
   width: 48px;
   height: 48px;
   font-size: 24px;
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(79, 195, 247, 0.6);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transition: background-color 0.3s ease, transform 0.3s ease;
   z-index: 1200;
   display: flex;
@@ -185,12 +218,43 @@ footer {
 }
 
 #backToTop:hover {
-  background-color: #81d4fa;
+  background-color: #e2d4b7;
   transform: scale(1.1);
 }
 
 #backToTop i {
-  pointer-events: none; /* l’icône ne capte pas les clics */
+  pointer-events: none;
+}
+
+/* 🔄 Neutraliser Bootstrap blue (important) */
+.text-primary,
+.text-info,
+.btn-outline-info,
+.btn-info,
+.bg-info,
+.border-info {
+  color: #212529 !important;
+  background-color: #f5e6ca !important;
+  border-color: #f5e6ca !important;
+}
+
+.btn-outline-info:hover,
+.btn-info:hover {
+  background-color: #e2d4b7 !important;
+  border-color: #e2d4b7 !important;
+  color: #000 !important;
+}
+
+/* Modifier .btn-secondary pour qu’il soit crème aussi */
+.btn-secondary {
+  background-color: #f5e6ca !important;
+  color: #212529 !important;
+  border: none !important;
+  transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #e2d4b7 !important;
 }
 
 #backToTop i {
