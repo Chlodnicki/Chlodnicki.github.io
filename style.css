@@ -226,7 +226,7 @@ footer {
   pointer-events: none;
 }
 
-/* 🔄 Neutraliser Bootstrap blue (important) */
+/*  Neutraliser Bootstrap blue (important) */
 .text-primary,
 .text-info,
 .btn-outline-info,
@@ -255,8 +255,4 @@ footer {
 
 .btn-secondary:hover {
   background-color: #e2d4b7 !important;
-}
-
-#backToTop i {
-  pointer-events: none; /* l’icône ne capte pas les clics */
 }
