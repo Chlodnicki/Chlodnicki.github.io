@@ -8,199 +8,489 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-  <!-- FontAwesome (icônes) -->
+  <!-- FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-  <!-- Ton style personnalisé -->
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Style personnalisé -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light shadow-sm">
     <div class="container">
-      <a class="navbar-brand brand-colored" href="#">Isabelle</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <a class="navbar-brand fw-bold" href="#hero">Isabelle</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="menu">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav gap-3">
           <li class="nav-item"><a class="nav-link" href="#hero">Accueil</a></li>
-          <li class="nav-item"><a class="nav-link" href="#présentation">Présentation</a></li>
-          <li class="nav-item"><a class="nav-link" href="#bts sio">BTS SIO </a></li>
-          <li class="nav-item"><a class="nav-link" href="#entreprise">Entreprise</a></li>
+          <li class="nav-item"><a class="nav-link" href="#presentation">Présentation</a></li>
+          <li class="nav-item"><a class="nav-link" href="#bts-sio">BTS SIO</a></li>
           <li class="nav-item"><a class="nav-link" href="#projets">Projets</a></li>
           <li class="nav-item"><a class="nav-link" href="#veille">Veille</a></li>
+          <li class="nav-item"><a class="nav-link" href="#E4">E4</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center text-center">
-  <h1 class="hero-title">Isabelle</h1>
-  <p class="hero-subtitle typing">Étudiante BTS SIO SLAM — Développement Web & Logiciel</p>
-  <a href="#projets" class="btn btn-custom">Voir mes projets</a>
-</section>
-  
-  <!-- Placeholder Présentation-->
-  <section id="présentation" class="container py-5 text-light">
-    <h2 class="mb-4">A propos de moi</h2>
-    <p> A venir</p>
+  <!-- Hero -->
+  <section id="hero" class="hero-section d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-10 mx-auto text-center">
+          <h1 class="hero-title mb-4">Isabelle</h1>
+          <p class="hero-subtitle mb-5">
+            <span class="typing-text"></span>
+            <span class="typing-cursor">|</span>
+          </p>
+          <a href="#projets" class="btn btn-primary btn-lg px-5 rounded-pill">Voir mes projets</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-decoration">
+      <div class="circle circle-1"></div>
+      <div class="circle circle-2"></div>
+      <div class="circle circle-3"></div>
+    </div>
   </section>
-  
-  <!-- Placeholder BTS SIO -->
-  <section id="bts sio" class="container py-5 text-light">
-    <h2 class="mb-4">Présentation du BTS SIO</h2>
-    <p class="text-dark">Le <strong>BTS SIO</strong> (Services Informatiques aux Organisations) est un diplôme de niveau Bac+2 reconnu par l'État. Il forme les étudiants aux métiers de l’informatique en entreprise, notamment dans les domaines du développement, de l'administration des réseaux, de la cybersécurité, et de la gestion de projets informatiques.</p>
-<p class="text-dark">Il se divise en deux spécialités distinctes.</p>
-    <div class="row mt-5">
-<!-- SLAM -->
-<div class="col-md-6 mb-4">
-<div class="card bg-dark h-100 shadow" data-aos="fade-right">
-<div class="card-body">
-<h4 class="card-title brand-colored">Option SLAM</h4>
-<p class="card-text text-dark">Développement de sites web, applications, interfaces, gestion de base de données et conception de solutions adaptées aux besoins des entreprises.</p>
-</div>
-</div>
-</div>
 
-<!-- SISR -->
-<div class="col-md-6 mb-4">
-<div class="card bg-dark h-100 shadow" data-aos="fade-left">
-<div class="card-body">
-<h4 class="card-title brand-colored">Option SIRSR</h4>
-<p class="card-text text-dark">Administration réseau, cybersécurité, maintenance de systèmes, virtualisation et déploiement d’infrastructures informatiques.</p>
-</div>
-</div>
-</div>
-</div>
-  </section>
-  
-  <!-- Entreprise -->
-  <section id="entreprise" class="container py-5 text-light">
-    <h2 class="mb-4">Entreprise</h2>
-    <p> A venir</p>
-  </section>
-    
-      <!-- Projet Année 1 -->
-      <section id="projets" class="container py-5">
-  <h2 class="text-center mb-5">Mes Projets</h2>
-
-  <!-- Année 1 -->
-  <div class="mb-5">
-    <h3 class="mb-4">Projets de 1ère année</h3>
-    <div class="row g-4">
-
-      <div class="col-md-6">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title brand-colored">COHESIO</h5>
-            <p class="card-text">Application organisation d'activités.</p>
-            <!-- Facultatif : capture -->
-            <!-- <img src="chemin/image.jpg" alt="Projet 1" class="img-fluid rounded mt-3"> -->
+  <!-- Présentation -->
+  <section id="presentation" class="section-padding bg-light-beige">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h2 class="section-title text-center mb-5">À propos de moi</h2>
+          <div class="title-underline mx-auto mb-5"></div>
+          
+          <div class="card border-0 shadow-soft p-lg-4 p-3">
+            <div class="card-body">
+              <p>Je m'appelle <strong>Isabelle Chlodnicki</strong> et je suis actuellement en <strong>BTS SIO option SLAM</strong> dans le cadre d'une reconversion professionnelle.</p>
+              
+              <p>Titulaire d'un <strong>BTS MUC</strong>, j'ai toujours été attirée par la <strong>technologie</strong> et le <strong>numérique</strong>. À la suite de ma dernière expérience en tant qu'<strong>agente valoriste</strong> dans une ressourcerie, où je testais et remettais en état des appareils électroniques, j'ai voulu comprendre le fonctionnement des logiciels et des systèmes informatiques.</p>
+              
+              <p>Je me suis donc orientée vers le <strong>développement web</strong>, un domaine qui me permet de mettre en pratique ma logique, ma curiosité et mon sens de l'analyse. Même en apprentissage, j'aime chercher et résoudre des problèmes par moi-même.</p>
+              
+              <p>Au fil de ma formation, j'ai découvert une véritable <strong>passion pour la cybersécurité</strong>, fascinée par son exigence, sa rigueur et son rôle essentiel dans la protection des données.</p>
+              
+              <p><strong>Bilingue en polonais</strong>, j'effectue mon alternance au sein de <strong>[Nom de ton entreprise]</strong> (anciennement <strong>[Ancien nom]</strong>), où je développe mes compétences en développement et sécurité.</p>
+              
+              <p>J'ai obtenu des <strong>certifications ANSSI et CNIL</strong> pour approfondir mes connaissances en <strong>sécurité des systèmes d'information</strong> et <strong>protection des données</strong>.</p>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-  <div class="col-md-6">
-  <div class="card h-100 shadow-sm">
-    <div class="card-body">
-      <h5 class="card-title brand-colored">Compétences et certifications</h5>
-      <p class="card-text">
-        J’ai renforcé mes compétences en cybersécurité en participant à des <strong>CTF</strong> (Capture The Flag) sur différentes plateformes. J'ai été formée à la détection de failles applicatives, j’ai ensuite été chargée de mener une mission de <strong>Bug Bounty</strong> en autonomie, afin d’appliquer ce que j’avais appris en environnement réel.
-      </p>
-
-      <h6 class="mt-3">Résumé des activités</h6>
-      <table class="table table-sm table-bordered">
-        <tbody>
-          <tr>
-            <th scope="row">CTF réalisés</th>
-            <td>...</td>
-          </tr>
-          <tr>
-            <th scope="row">...</th>
-            <td>3</td>
-          </tr>
-          <tr>
-            <th scope="row">Certifications</th>
-            <td>3</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h6 class="mt-3">Outils utilisés</h6>
-      <ul class="mb-0">
-        <li>Wireshark</li>
-        <li>Nmap</li>
-        <li>Burp Suite</li>
-        <li>Kali Linux</li>
-        <li>...</li>
-      </ul>
-    </div> <!-- fin .card-body -->
-  </div> <!-- fin .card -->
-</div> <!-- fin .col -->
-
-
-  <!-- Année 2 -->
-  <div>
-    <h3 class="mb-4">Projets de 2ᵉ année</h3>
-    <div class="row g-4">
-
-      <div class="col-md-6">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Projet RFTG</h5>
-            <p class="card-text">A suivre.</p>
+  <!-- BTS SIO -->
+  <section id="bts-sio" class="section-padding">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">Présentation du BTS SIO</h2>
+      <div class="title-underline mx-auto mb-5"></div>
+      
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-10">
+          <div class="card shadow-soft border-0">
+            <div class="card-body p-4">
+              <p>Le <strong>BTS SIO</strong> (Services Informatiques aux Organisations) est un diplôme de niveau Bac+2 reconnu par l'État, qui forme aux métiers de l'informatique en entreprise. Il prépare les étudiants à concevoir, développer et maintenir des solutions logicielles et des infrastructures informatiques, tout en tenant compte des besoins des organisations.</p>
+              
+              <p class="mb-0">Ce diplôme propose deux spécialités :</p>
+            </div>
           </div>
         </div>
       </div>
-</section>
-  
+      
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card shadow-soft h-100">
+            <div class="card-body p-4">
+              <h4 class="card-title brand-colored mb-3">Option SLAM</h4>
+              <p class="card-text">Développement de sites web, applications, interfaces, gestion de bases de données et conception de solutions adaptées aux besoins des entreprises.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6">
+          <div class="card shadow-soft h-100">
+            <div class="card-body p-4">
+              <h4 class="card-title brand-colored mb-3">Option SISR</h4>
+              <p class="card-text">Administration réseau, cybersécurité, maintenance de systèmes, virtualisation et déploiement d'infrastructures informatiques.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projets -->
+  <section id="projets" class="section-padding bg-light-beige">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">Mes Projets</h2>
+      <div class="title-underline mx-auto mb-5"></div>
+      
+      <div class="row g-5">
+        <!-- 1ère année - COHESIO -->
+        <div class="col-12">
+          <div class="year-badge-wrapper text-center mb-4">
+            <span class="badge bg-gradient-beige py-2 px-4 rounded-pill fs-5">
+              <i class="fas fa-calendar-alt me-2"></i>1ère année - Projet Principal
+            </span>
+          </div>
+          
+          <div class="card project-card-detailed shadow-soft border-0">
+            <div class="card-body p-5">
+              <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                  <div class="project-logo-wrapper text-center mb-4">
+                    <img src="images/cohesio-accueil.png" alt="Logo COHESIO" class="img-fluid rounded-3 shadow-sm">
+                  </div>
+                  <div class="project-tags-wrapper">
+                    <span class="badge project-tag-tech mb-2">Java</span>
+                    <span class="badge project-tag-tech mb-2">Swing</span>
+                    <span class="badge project-tag-tech mb-2">MySQL</span>
+                    <span class="badge project-tag-tech mb-2">MVC</span>
+                  </div>
+                </div>
+                
+                <div class="col-lg-8">
+                  <h3 class="project-title mb-3">
+                    <i class="fas fa-users me-2"></i>COHESIO
+                  </h3>
+                  <p class="project-subtitle text-muted mb-4">Application d'organisation d'activités entre collègues</p>
+                  
+                  <div class="project-description mb-4">
+                    <h5 class="mb-3"><i class="fas fa-bullseye me-2 text-primary"></i>Objectif du projet</h5>
+                    <p>Application interne conçue pour faciliter l'organisation de sorties et activités entre collègues. Le but est de créer du lien, favoriser la cohésion d'équipe, valoriser l'initiative et encourager la participation.</p>
+                  </div>
+                  
+                  <div class="project-features mb-4">
+                    <h5 class="mb-3"><i class="fas fa-star me-2 text-primary"></i>Fonctionnalités principales</h5>
+                    <div class="row g-3">
+                      <div class="col-md-6">
+                        <div class="feature-item">
+                          <i class="fas fa-check-circle text-success me-2"></i>
+                          <span>Gestion des utilisateurs et profils</span>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="feature-item">
+                          <i class="fas fa-check-circle text-success me-2"></i>
+                          <span>Création et gestion d'activités</span>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="feature-item">
+                          <i class="fas fa-check-circle text-success me-2"></i>
+                          <span>Système d'inscription aux activités</span>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="feature-item">
+                          <i class="fas fa-check-circle text-success me-2"></i>
+                          <span>Galerie photo des événements</span>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="feature-item">
+                          <i class="fas fa-check-circle text-success me-2"></i>
+                          <span>Gestion des centres d'intérêt</span>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="feature-item">
+                          <i class="fas fa-check-circle text-success me-2"></i>
+                          <span>Interface intuitive et ergonomique</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="project-tech-details">
+                    <h5 class="mb-3"><i class="fas fa-code me-2 text-primary"></i>Technologies utilisées</h5>
+                    <ul class="tech-list">
+                      <li><strong>Langage :</strong> Java avec framework Swing pour l'interface graphique</li>
+                      <li><strong>Base de données :</strong> MySQL pour la gestion des données</li>
+                      <li><strong>Architecture :</strong> Modèle MVC (Modèle-Vue-Contrôleur)</li>
+                      <li><strong>Conception :</strong> Diagrammes UML (cas d'usage, classes)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Galerie de captures d'écran -->
+              <div class="project-gallery mt-5">
+                <h5 class="mb-4 text-center"><i class="fas fa-images me-2 text-primary"></i>Aperçu de l'application</h5>
+                <div class="row g-3">
+                  <div class="col-md-4">
+                    <div class="gallery-item">
+                      <img src="images/cohesio-connexion.png" alt="Page de connexion" class="img-fluid rounded shadow-sm">
+                      <p class="text-center mt-2 small text-muted">Page de connexion</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="gallery-item">
+                      <img src="images/cohesio-menu.png" alt="Menu principal" class="img-fluid rounded shadow-sm">
+                      <p class="text-center mt-2 small text-muted">Menu principal</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="gallery-item">
+                      <img src="images/cohesio-liste.png" alt="Liste des activités" class="img-fluid rounded shadow-sm">
+                      <p class="text-center mt-2 small text-muted">Liste des activités</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="gallery-item">
+                      <img src="images/cohesio-creation.png" alt="Création d'activité" class="img-fluid rounded shadow-sm">
+                      <p class="text-center mt-2 small text-muted">Création d'activité</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="gallery-item">
+                      <img src="images/cohesio-bdd.png" alt="Modèle de base de données" class="img-fluid rounded shadow-sm">
+                      <p class="text-center mt-2 small text-muted">Modèle de BDD</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="gallery-item">
+                      <img src="images/cohesio-diagramme.png" alt="Diagramme de cas d'usage" class="img-fluid rounded shadow-sm">
+                      <p class="text-center mt-2 small text-muted">Cas d'usage</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Compétences acquises -->
+              <div class="project-skills mt-5 p-4 rounded-3" style="background: linear-gradient(135deg, var(--beige-50), var(--beige-100));">
+                <h5 class="mb-3"><i class="fas fa-graduation-cap me-2 text-primary"></i>Compétences développées</h5>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="skill-acquired">
+                      <i class="fas fa-arrow-right text-primary me-2"></i>
+                      <span>Développement d'applications desktop en Java</span>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-acquired">
+                      <i class="fas fa-arrow-right text-primary me-2"></i>
+                      <span>Conception et modélisation UML</span>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-acquired">
+                      <i class="fas fa-arrow-right text-primary me-2"></i>
+                      <span>Gestion de bases de données MySQL</span>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-acquired">
+                      <i class="fas fa-arrow-right text-primary me-2"></i>
+                      <span>Architecture MVC et bonnes pratiques</span>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-acquired">
+                      <i class="fas fa-arrow-right text-primary me-2"></i>
+                      <span>Travail en équipe et gestion de projet</span>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-acquired">
+                      <i class="fas fa-arrow-right text-primary me-2"></i>
+                      <span>Interface utilisateur ergonomique</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 2ème année -->
+        <div class="col-12">
+          <div class="year-badge-wrapper text-center mb-4">
+            <span class="badge bg-gradient-beige py-2 px-4 rounded-pill fs-5">
+              <i class="fas fa-calendar-alt me-2"></i>2ème année
+            </span>
+          </div>
+          
+          <div class="card project-card shadow-soft">
+            <div class="card-body p-5 text-center">
+              <div class="project-icon-placeholder mb-4">
+                <i class="fas fa-hourglass-half"></i>
+              </div>
+              <h4 class="brand-colored mb-3">Projet RFTG</h4>
+              <p class="text-muted mb-4">Projet en cours de développement pour la 2ème année du BTS SIO.</p>
+              <span class="badge bg-warning text-dark px-4 py-2">En cours de réalisation</span>
+              <p class="text-muted small mt-3 mb-0">Plus d'informations à venir prochainement...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Veille -->
-  <section id="veille" class="container py-5 text-light">
-    <h2 class="mb-4">Veille Technologique</h2>
-    <p>En cours...</p>
+  <section id="veille" class="section-padding">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">Veille Technologique</h2>
+      <div class="title-underline mx-auto mb-5"></div>
+      <p class="text-center">En cours...</p>
+    </div>
   </section>
 
- <!-- Barre de contact -->
-<div id="contact-bar">
-Contact : <i class="fas fa-envelope"></i> <a href="mailto:isabelle@example.com">isabelle@</a> &nbsp;|&nbsp;
-LinkedIn : <i class="fab fa-linkedin"></i> <a href="https://fr.linkedin.com/in/isabelle-chlodnicki-288a66200" target="_blank">Mon profil</a>
-</div>
+  <!-- E4 -->
+  <section id="E4" class="section-padding bg-light-beige">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">Épreuve E4</h2>
+      <div class="title-underline mx-auto mb-5"></div>
+      <p class="text-center">Contenu à venir...</p>
+    </div>
+  </section>
 
-<!-- Footer -->
-<footer>
-<span>&copy; Isabelle Session 2024-2026 BTS SIO SLAM</span>
-</footer>
+  <!-- Footer -->
+  <footer class="footer py-4">
+    <div class="container">
+      <div class="text-center">
+        <p class="mb-2">
+          📧 Email : <a href="mailto:isabelle@example.com">isabelle@example.com</a> &nbsp;|&nbsp;
+          🔗 LinkedIn : <a href="https://fr.linkedin.com/in/isabelle-chlodnicki-288a66200" target="_blank">Mon profil</a>
+        </p>
+        <p class="mb-0">&copy; Isabelle Session 2024-2026 BTS SIO SLAM</p>
+      </div>
+    </div>
+  </footer>
 
+  <!-- Bouton retour en haut -->
+  <button id="backToTop" class="btn-back-to-top" onclick="scrollToTop()">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   
-  <button id="backToTop" title="Retour en haut">
-  <i class="fas fa-chevron-up"></i>
-</button>
+  <!-- Script personnalisé -->
+  <script>
+    // Effet typing pour le texte hero
+    const text = "Étudiante BTS SIO SLAM — Développement Web & Cybersécurité";
+    const typingText = document.querySelector('.typing-text');
+    const cursor = document.querySelector('.typing-cursor');
+    let index = 0;
 
-<script>
-  const backToTopButton = document.getElementById('backToTop');
-
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-      backToTopButton.style.display = 'block';
-    } else {
-      backToTopButton.style.display = 'none';
+    function typeWriter() {
+      if (index < text.length) {
+        typingText.textContent += text.charAt(index);
+        index++;
+        setTimeout(typeWriter, 80);
+      } else {
+        cursor.style.animation = 'blink 0.7s infinite';
+      }
     }
-  });
 
-  backToTopButton.addEventListener('click', () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
+    // Démarrer l'effet typing après un court délai
+    setTimeout(typeWriter, 500);
+
+    // Smooth scroll avec offset pour la navbar
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          const offset = 100;
+          const targetPosition = target.offsetTop - offset;
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
     });
-  });
-</script>
 
-  <script src="script.js"></script>
+    // Navbar au scroll
+    window.addEventListener('scroll', function() {
+      const navbar = document.querySelector('.navbar');
+      const backToTop = document.getElementById('backToTop');
+      
+      if (window.scrollY > 100) {
+        navbar.classList.add('scrolled');
+        backToTop.classList.add('show');
+      } else {
+        navbar.classList.remove('scrolled');
+        backToTop.classList.remove('show');
+      }
+    });
+
+    // Retour en haut
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+
+    // Animation au scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.card').forEach(el => {
+      observer.observe(el);
+    });
+
+    // ===== LIGHTBOX POUR LES IMAGES =====
+    // Créer la lightbox
+    const lightbox = document.createElement('div');
+    lightbox.id = 'lightbox';
+    lightbox.innerHTML = `
+      <span class="lightbox-close">&times;</span>
+      <img class="lightbox-content" id="lightbox-img">
+      <div class="lightbox-caption"></div>
+    `;
+    document.body.appendChild(lightbox);
+
+    // Ajouter le clic sur toutes les images de la galerie
+    document.querySelectorAll('.gallery-item img, .project-logo-wrapper img').forEach(img => {
+      img.style.cursor = 'pointer';
+      img.addEventListener('click', function() {
+        lightbox.style.display = 'flex';
+        document.getElementById('lightbox-img').src = this.src;
+        document.querySelector('.lightbox-caption').textContent = this.alt;
+        document.body.style.overflow = 'hidden'; // Empêcher le scroll
+      });
+    });
+
+    // Fermer la lightbox
+    lightbox.addEventListener('click', function(e) {
+      if (e.target === lightbox || e.target.classList.contains('lightbox-close')) {
+        lightbox.style.display = 'none';
+        document.body.style.overflow = 'auto'; // Réactiver le scroll
+      }
+    });
+
+    // Fermer avec la touche Echap
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && lightbox.style.display === 'flex') {
+        lightbox.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+    });
+  </script>
 </body>
 </html>
