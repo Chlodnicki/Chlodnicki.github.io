@@ -40,7 +40,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 100px;
+  scroll-padding-top: 130px;
 }
 
 body {
@@ -490,6 +490,7 @@ section + section {
 /* ===== Projets Section ===== */
 .year-badge-wrapper {
   margin-bottom: 2rem;
+  margin-top: 4rem;
 }
 
 .bg-gradient-beige {
