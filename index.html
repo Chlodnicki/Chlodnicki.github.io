@@ -35,7 +35,7 @@
           <li class="nav-item"><a class="nav-link" href="#bts-sio">BTS SIO</a></li>
           <li class="nav-item"><a class="nav-link" href="#projets">Projets</a></li>
           <li class="nav-item"><a class="nav-link" href="#veille">Veille</a></li>
-          <li class="nav-item"><a class="nav-link" href="#E4">E4</a></li>
+          <li class="nav-item"><a class="nav-link" href="#E5">E5</a></li>
         </ul>
       </div>
     </div>
@@ -174,7 +174,9 @@
 
                   <div class="mt-3 pt-3 border-top">
                     <p class="small mb-1"><strong class="text-primary">Compétences :</strong></p>
-                    <p class="small text-muted mb-0">Manipulation de fichiers, expressions régulières, parsing de code SQL</p>
+                    <p class="small text-muted mb-2">Manipulation de fichiers, expressions régulières, parsing de code SQL</p>
+                    <p class="small mb-1"><strong style="color:#5b3d8a;">Référence E5 :</strong></p>
+                    <span class="badge e5-badge mb-1">Mode projet</span>
                   </div>
                 </div>
               </div>
@@ -208,7 +210,9 @@
 
                   <div class="mt-3 pt-3 border-top">
                     <p class="small mb-1"><strong class="text-success">Compétences :</strong></p>
-                    <p class="small text-muted mb-0">Gestion des flux de données, algorithmes de comparaison, traitement par lots</p>
+                    <p class="small text-muted mb-2">Gestion des flux de données, algorithmes de comparaison, traitement par lots</p>
+                    <p class="small mb-1"><strong style="color:#5b3d8a;">Référence E5 :</strong></p>
+                    <span class="badge e5-badge mb-1">Mode projet</span>
                   </div>
                 </div>
               </div>
@@ -242,7 +246,9 @@
 
                   <div class="mt-3 pt-3 border-top">
                     <p class="small mb-1"><strong class="text-warning">Compétences :</strong></p>
-                    <p class="small text-muted mb-0">Logique de jeu, structures de données, programmation orientée objet</p>
+                    <p class="small text-muted mb-2">Logique de jeu, structures de données, programmation orientée objet</p>
+                    <p class="small mb-1"><strong style="color:#5b3d8a;">Référence E5 :</strong></p>
+                    <span class="badge e5-badge mb-1">Mode projet</span>
                   </div>
                 </div>
               </div>
@@ -276,7 +282,9 @@
 
                   <div class="mt-3 pt-3 border-top">
                     <p class="small mb-1"><strong class="text-danger">Compétences :</strong></p>
-                    <p class="small text-muted mb-0">XSS, SQL injection, CSRF, méthodologie OWASP Top 10, analyse de vulnérabilités</p>
+                    <p class="small text-muted mb-2">XSS, SQL injection, CSRF, méthodologie OWASP Top 10, analyse de vulnérabilités</p>
+                    <p class="small mb-1"><strong style="color:#5b3d8a;">Référence E5 :</strong></p>
+                    <span class="badge e5-badge mb-1">Gestion des incidents</span>
                   </div>
                 </div>
               </div>
@@ -291,171 +299,198 @@
               <i class="fas fa-calendar-alt me-2"></i>1ère année - Projet Principal
             </span>
           </div>
-          
+
           <div class="card project-card-detailed shadow-soft border-0">
             <div class="card-body p-5">
-              <div class="row">
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                  <div class="project-logo-wrapper text-center mb-4">
-                    <img src="images/cohesio-accueil.png" alt="Logo COHESIO" class="img-fluid rounded-3 shadow-sm">
+
+              <!-- Onglets COHESIO -->
+              <ul class="nav nav-tabs justify-content-center mb-4" id="cohesioTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="cohesio-presentation-tab" data-bs-toggle="tab" data-bs-target="#cohesio-presentation" type="button" role="tab">
+                    <i class="fas fa-info-circle me-2"></i>Présentation
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="cohesio-documents-tab" data-bs-toggle="tab" data-bs-target="#cohesio-documents" type="button" role="tab">
+                    <i class="fas fa-images me-2"></i>Documents
+                  </button>
+                </li>
+              </ul>
+
+              <div class="tab-content" id="cohesioTabContent">
+
+                <!-- Onglet Présentation -->
+                <div class="tab-pane fade show active" id="cohesio-presentation" role="tabpanel">
+                  <div class="row">
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                      <div class="project-logo-wrapper text-center mb-4">
+                        <img src="images/cohesio-accueil.png" alt="Logo COHESIO" class="img-fluid rounded-3 shadow-sm">
+                      </div>
+                      <div class="project-tags-wrapper">
+                        <span class="badge project-tag-tech mb-2">Java</span>
+                        <span class="badge project-tag-tech mb-2">Swing</span>
+                        <span class="badge project-tag-tech mb-2">MySQL</span>
+                        <span class="badge project-tag-tech mb-2">MVC</span>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-8">
+                      <h3 class="project-title mb-3">
+                        <i class="fas fa-users me-2"></i>COHESIO
+                      </h3>
+                      <p class="project-subtitle text-muted mb-4">Application d'organisation d'activités entre collègues</p>
+
+                      <div class="project-description mb-4">
+                        <h5 class="mb-3"><i class="fas fa-bullseye me-2 text-primary"></i>Objectif du projet</h5>
+                        <p>Application interne conçue pour faciliter l'organisation de sorties et activités entre collègues. Le but est de créer du lien, favoriser la cohésion d'équipe, valoriser l'initiative et encourager la participation.</p>
+                      </div>
+
+                      <div class="project-features mb-4">
+                        <h5 class="mb-3"><i class="fas fa-star me-2 text-primary"></i>Fonctionnalités principales</h5>
+                        <div class="row g-2">
+                          <div class="col-md-6">
+                            <div class="feature-item">
+                              <i class="fas fa-check-circle text-success me-2"></i>
+                              <span>Gestion des utilisateurs et profils</span>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="feature-item">
+                              <i class="fas fa-check-circle text-success me-2"></i>
+                              <span>Création et gestion d'activités</span>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="feature-item">
+                              <i class="fas fa-check-circle text-success me-2"></i>
+                              <span>Système d'inscription aux activités</span>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="feature-item">
+                              <i class="fas fa-check-circle text-success me-2"></i>
+                              <span>Galerie photo des événements</span>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="feature-item">
+                              <i class="fas fa-check-circle text-success me-2"></i>
+                              <span>Gestion des centres d'intérêt</span>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="feature-item">
+                              <i class="fas fa-check-circle text-success me-2"></i>
+                              <span>Interface intuitive et ergonomique</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="project-tech-details mb-4">
+                        <h5 class="mb-3"><i class="fas fa-code me-2 text-primary"></i>Technologies utilisées</h5>
+                        <ul class="tech-list">
+                          <li><strong>Langage :</strong> Java avec framework Swing pour l'interface graphique</li>
+                          <li><strong>Base de données :</strong> MySQL pour la gestion des données</li>
+                          <li><strong>Architecture :</strong> Modèle MVC (Modèle-Vue-Contrôleur)</li>
+                          <li><strong>Conception :</strong> Diagrammes UML (cas d'usage, classes)</li>
+                        </ul>
+                      </div>
+
+                      <div>
+                        <p class="small mb-2"><strong style="color:#5b3d8a;">Référence E5 :</strong></p>
+                        <span class="badge e5-badge mb-1">Mode projet</span>
+                        <span class="badge e5-badge mb-1">Développement professionnel</span>
+                      </div>
+                    </div>
                   </div>
-                  <div class="project-tags-wrapper">
-                    <span class="badge project-tag-tech mb-2">Java</span>
-                    <span class="badge project-tag-tech mb-2">Swing</span>
-                    <span class="badge project-tag-tech mb-2">MySQL</span>
-                    <span class="badge project-tag-tech mb-2">MVC</span>
-                  </div>
-                </div>
-                
-                <div class="col-lg-8">
-                  <h3 class="project-title mb-3">
-                    <i class="fas fa-users me-2"></i>COHESIO
-                  </h3>
-                  <p class="project-subtitle text-muted mb-4">Application d'organisation d'activités entre collègues</p>
-                  
-                  <div class="project-description mb-4">
-                    <h5 class="mb-3"><i class="fas fa-bullseye me-2 text-primary"></i>Objectif du projet</h5>
-                    <p>Application interne conçue pour faciliter l'organisation de sorties et activités entre collègues. Le but est de créer du lien, favoriser la cohésion d'équipe, valoriser l'initiative et encourager la participation.</p>
-                  </div>
-                  
-                  <div class="project-features mb-4">
-                    <h5 class="mb-3"><i class="fas fa-star me-2 text-primary"></i>Fonctionnalités principales</h5>
-                    <div class="row g-2">
+
+                  <!-- Compétences acquises -->
+                  <div class="project-skills mt-5 p-4 rounded-3" style="background: linear-gradient(135deg, var(--beige-50), var(--beige-100));">
+                    <h5 class="mb-3"><i class="fas fa-graduation-cap me-2 text-primary"></i>Compétences développées</h5>
+                    <div class="row g-3">
                       <div class="col-md-6">
-                        <div class="feature-item">
-                          <i class="fas fa-check-circle text-success me-2"></i>
-                          <span>Gestion des utilisateurs et profils</span>
+                        <div class="skill-acquired">
+                          <i class="fas fa-arrow-right text-primary me-2"></i>
+                          <span>Développement d'applications desktop en Java</span>
                         </div>
                       </div>
                       <div class="col-md-6">
-                        <div class="feature-item">
-                          <i class="fas fa-check-circle text-success me-2"></i>
-                          <span>Création et gestion d'activités</span>
+                        <div class="skill-acquired">
+                          <i class="fas fa-arrow-right text-primary me-2"></i>
+                          <span>Conception et modélisation UML</span>
                         </div>
                       </div>
                       <div class="col-md-6">
-                        <div class="feature-item">
-                          <i class="fas fa-check-circle text-success me-2"></i>
-                          <span>Système d'inscription aux activités</span>
+                        <div class="skill-acquired">
+                          <i class="fas fa-arrow-right text-primary me-2"></i>
+                          <span>Gestion de bases de données MySQL</span>
                         </div>
                       </div>
                       <div class="col-md-6">
-                        <div class="feature-item">
-                          <i class="fas fa-check-circle text-success me-2"></i>
-                          <span>Galerie photo des événements</span>
+                        <div class="skill-acquired">
+                          <i class="fas fa-arrow-right text-primary me-2"></i>
+                          <span>Architecture MVC et bonnes pratiques</span>
                         </div>
                       </div>
                       <div class="col-md-6">
-                        <div class="feature-item">
-                          <i class="fas fa-check-circle text-success me-2"></i>
-                          <span>Gestion des centres d'intérêt</span>
+                        <div class="skill-acquired">
+                          <i class="fas fa-arrow-right text-primary me-2"></i>
+                          <span>Travail en équipe et gestion de projet</span>
                         </div>
                       </div>
                       <div class="col-md-6">
-                        <div class="feature-item">
-                          <i class="fas fa-check-circle text-success me-2"></i>
-                          <span>Interface intuitive et ergonomique</span>
+                        <div class="skill-acquired">
+                          <i class="fas fa-arrow-right text-primary me-2"></i>
+                          <span>Interface utilisateur ergonomique</span>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  
-                  <div class="project-tech-details">
-                    <h5 class="mb-3"><i class="fas fa-code me-2 text-primary"></i>Technologies utilisées</h5>
-                    <ul class="tech-list">
-                      <li><strong>Langage :</strong> Java avec framework Swing pour l'interface graphique</li>
-                      <li><strong>Base de données :</strong> MySQL pour la gestion des données</li>
-                      <li><strong>Architecture :</strong> Modèle MVC (Modèle-Vue-Contrôleur)</li>
-                      <li><strong>Conception :</strong> Diagrammes UML (cas d'usage, classes)</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              
-              <!-- Galerie de captures d'écran -->
-              <div class="project-gallery mt-5">
-                <h5 class="mb-4 text-center"><i class="fas fa-images me-2 text-primary"></i>Aperçu de l'application</h5>
-                <div class="row g-3">
-                  <div class="col-md-4">
-                    <div class="gallery-item">
-                      <img src="images/cohesio-connexion.png" alt="Page de connexion" class="img-fluid rounded shadow-sm">
-                      <p class="text-center mt-2 small text-muted">Page de connexion</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="gallery-item">
-                      <img src="images/cohesio-menu.png" alt="Menu principal" class="img-fluid rounded shadow-sm">
-                      <p class="text-center mt-2 small text-muted">Menu principal</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="gallery-item">
-                      <img src="images/cohesio-liste.png" alt="Liste des activités" class="img-fluid rounded shadow-sm">
-                      <p class="text-center mt-2 small text-muted">Liste des activités</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="gallery-item">
-                      <img src="images/cohesio-creation.png" alt="Création d'activité" class="img-fluid rounded shadow-sm">
-                      <p class="text-center mt-2 small text-muted">Création d'activité</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="gallery-item">
-                      <img src="images/cohesio-bdd.png" alt="Modèle de base de données" class="img-fluid rounded shadow-sm">
-                      <p class="text-center mt-2 small text-muted">Modèle de BDD</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="gallery-item">
-                      <img src="images/cohesio-diagramme.png" alt="Diagramme de cas d'usage" class="img-fluid rounded shadow-sm">
-                      <p class="text-center mt-2 small text-muted">Cas d'usage</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <!-- Compétences acquises -->
-              <div class="project-skills mt-5 p-4 rounded-3" style="background: linear-gradient(135deg, var(--beige-50), var(--beige-100));">
-                <h5 class="mb-3"><i class="fas fa-graduation-cap me-2 text-primary"></i>Compétences développées</h5>
-                <div class="row g-3">
-                  <div class="col-md-6">
-                    <div class="skill-acquired">
-                      <i class="fas fa-arrow-right text-primary me-2"></i>
-                      <span>Développement d'applications desktop en Java</span>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="skill-acquired">
-                      <i class="fas fa-arrow-right text-primary me-2"></i>
-                      <span>Conception et modélisation UML</span>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="skill-acquired">
-                      <i class="fas fa-arrow-right text-primary me-2"></i>
-                      <span>Gestion de bases de données MySQL</span>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="skill-acquired">
-                      <i class="fas fa-arrow-right text-primary me-2"></i>
-                      <span>Architecture MVC et bonnes pratiques</span>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="skill-acquired">
-                      <i class="fas fa-arrow-right text-primary me-2"></i>
-                      <span>Travail en équipe et gestion de projet</span>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="skill-acquired">
-                      <i class="fas fa-arrow-right text-primary me-2"></i>
-                      <span>Interface utilisateur ergonomique</span>
                     </div>
                   </div>
                 </div>
+
+                <!-- Onglet Documents -->
+                <div class="tab-pane fade" id="cohesio-documents" role="tabpanel">
+                  <div class="row g-3">
+                    <div class="col-md-4">
+                      <div class="gallery-item">
+                        <img src="images/cohesio-connexion.png" alt="Page de connexion" class="img-fluid rounded shadow-sm">
+                        <p class="text-center mt-2 small text-muted">Page de connexion</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="gallery-item">
+                        <img src="images/cohesio-menu.png" alt="Menu principal" class="img-fluid rounded shadow-sm">
+                        <p class="text-center mt-2 small text-muted">Menu principal</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="gallery-item">
+                        <img src="images/cohesio-liste.png" alt="Liste des activités" class="img-fluid rounded shadow-sm">
+                        <p class="text-center mt-2 small text-muted">Liste des activités</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="gallery-item">
+                        <img src="images/cohesio-creation.png" alt="Création d'activité" class="img-fluid rounded shadow-sm">
+                        <p class="text-center mt-2 small text-muted">Création d'activité</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="gallery-item">
+                        <img src="images/cohesio-bdd.png" alt="Modèle de base de données" class="img-fluid rounded shadow-sm">
+                        <p class="text-center mt-2 small text-muted">Modèle de BDD</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="gallery-item">
+                        <img src="images/cohesio-diagramme.png" alt="Diagramme de cas d'usage" class="img-fluid rounded shadow-sm">
+                        <p class="text-center mt-2 small text-muted">Cas d'usage</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
@@ -498,7 +533,11 @@
 
               <div class="mt-4 pt-4 border-top text-center">
                 <p class="mb-2"><strong class="text-info">Compétences :</strong></p>
-                <p class="text-muted mb-0">Développement fullstack, maintenance applicative, gestion de base de données, tests fonctionnels, documentation technique</p>
+                <p class="text-muted mb-3">Développement fullstack, maintenance applicative, gestion de base de données, tests fonctionnels, documentation technique</p>
+                <p class="small mb-2"><strong style="color:#5b3d8a;">Référence E5 :</strong></p>
+                <span class="badge e5-badge mb-1">Gestion des incidents</span>
+                <span class="badge e5-badge mb-1">Mode projet</span>
+                <span class="badge e5-badge mb-1">Mise à disposition SI</span>
               </div>
             </div>
           </div>
@@ -520,63 +559,147 @@
                 </div>
                 <h4 class="brand-colored mb-3">RFTG</h4>
                 <p class="text-muted">Système de gestion de location de DVD comprenant une interface web d'administration et une application mobile de location.</p>
-                <span class="badge bg-warning text-dark px-4 py-2 mt-3">En cours de développement</span>
               </div>
 
-              <div class="mb-4">
-                <h5 class="fw-bold mb-3"><i class="fas fa-layer-group me-2 text-primary"></i>Architecture du système :</h5>
-                <div class="row g-3">
-                  <div class="col-md-6">
-                    <div class="p-3 bg-light rounded">
-                      <h6 class="text-primary mb-2"><i class="fas fa-desktop me-2"></i>Mario - Interface Web</h6>
-                      <p class="small text-muted mb-0">Gestion des films, DVD et stocks via interface web Laravel (Pattern MVC)</p>
+              <!-- Onglets RFTG -->
+              <ul class="nav nav-tabs justify-content-center mb-4" id="rftgTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="rftg-presentation-tab" data-bs-toggle="tab" data-bs-target="#rftg-presentation" type="button" role="tab">
+                    <i class="fas fa-info-circle me-2"></i>Présentation
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="rftg-documents-tab" data-bs-toggle="tab" data-bs-target="#rftg-documents" type="button" role="tab">
+                    <i class="fas fa-images me-2"></i>Documents
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="rftg-videos-tab" data-bs-toggle="tab" data-bs-target="#rftg-videos" type="button" role="tab">
+                    <i class="fas fa-video me-2"></i>Vidéos
+                  </button>
+                </li>
+              </ul>
+
+              <div class="tab-content" id="rftgTabContent">
+
+                <!-- Onglet Présentation -->
+                <div class="tab-pane fade show active" id="rftg-presentation" role="tabpanel">
+                  <div class="mb-4">
+                    <h5 class="fw-bold mb-3"><i class="fas fa-layer-group me-2 text-primary"></i>Architecture du système :</h5>
+                    <div class="row g-3">
+                      <div class="col-md-6">
+                        <div class="p-3 bg-light rounded">
+                          <h6 class="text-primary mb-2"><i class="fas fa-desktop me-2"></i>Mario - Interface Web</h6>
+                          <p class="small text-muted mb-0">Gestion des films, DVD et stocks via interface web Laravel (Pattern MVC)</p>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="p-3 bg-light rounded">
+                          <h6 class="text-success mb-2"><i class="fas fa-mobile-alt me-2"></i>Luigi - Application Mobile</h6>
+                          <p class="small text-muted mb-0">Application Android pour la location de DVD par les clients</p>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="p-3 bg-light rounded">
+                          <h6 class="text-info mb-2"><i class="fas fa-server me-2"></i>Toad - API Backend</h6>
+                          <p class="small text-muted mb-0">API REST en Java avec JPA/ORM pour la gestion des données</p>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="p-3 bg-light rounded">
+                          <h6 class="text-danger mb-2"><i class="fas fa-database me-2"></i>Peach - Base de données</h6>
+                          <p class="small text-muted mb-0">Base de données MySQL pour le stockage des informations</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <div class="p-3 bg-light rounded">
-                      <h6 class="text-success mb-2"><i class="fas fa-mobile-alt me-2"></i>Luigi - Application Mobile</h6>
-                      <p class="small text-muted mb-0">Application Android pour la location de DVD par les clients</p>
-                    </div>
+
+                  <div class="mb-4">
+                    <h5 class="fw-bold mb-3"><i class="fas fa-cog me-2 text-primary"></i>Fonctionnalités principales :</h5>
+                    <ul class="text-muted" style="padding-left: 1.5rem;">
+                      <li class="mb-2">Gestion complète des films et DVD (ajout, modification, suppression)</li>
+                      <li class="mb-2">Système de location via application mobile</li>
+                      <li class="mb-2">Gestion des emprunts et retours</li>
+                      <li class="mb-2">Gestion des stocks et disponibilités</li>
+                      <li class="mb-2">Gestion des utilisateurs clients</li>
+                    </ul>
                   </div>
-                  <div class="col-md-6">
-                    <div class="p-3 bg-light rounded">
-                      <h6 class="text-info mb-2"><i class="fas fa-server me-2"></i>Toad - API Backend</h6>
-                      <p class="small text-muted mb-0">API REST en Java avec JPA/ORM pour la gestion des données</p>
-                    </div>
+
+                  <div class="project-tags-wrapper text-center mb-4">
+                    <span class="badge project-tag-tech mb-2">Laravel</span>
+                    <span class="badge project-tag-tech mb-2">PHP</span>
+                    <span class="badge project-tag-tech mb-2">Java Android</span>
+                    <span class="badge project-tag-tech mb-2">JPA/ORM</span>
+                    <span class="badge project-tag-tech mb-2">MySQL</span>
+                    <span class="badge project-tag-tech mb-2">API REST</span>
+                    <span class="badge project-tag-tech mb-2">MVC</span>
                   </div>
-                  <div class="col-md-6">
-                    <div class="p-3 bg-light rounded">
-                      <h6 class="text-danger mb-2"><i class="fas fa-database me-2"></i>Peach - Base de données</h6>
-                      <p class="small text-muted mb-0">Base de données MySQL pour le stockage des informations</p>
+
+                  <div class="pt-4 border-top text-center">
+                    <p class="mb-2"><strong class="text-primary">Compétences développées :</strong></p>
+                    <p class="text-muted mb-3">Architecture multi-composants, développement web et mobile, API REST, ORM, gestion de base de données, pattern MVC</p>
+                    <p class="small mb-2"><strong style="color:#5b3d8a;">Référence E5 :</strong></p>
+                    <span class="badge e5-badge mb-1">Mode projet</span>
+                    <span class="badge e5-badge mb-1">Mise à disposition SI</span>
+                  </div>
+                </div>
+
+                <!-- Onglet Documents -->
+                <div class="tab-pane fade" id="rftg-documents" role="tabpanel">
+                  <div class="row g-3">
+                    <div class="col-md-4">
+                      <div class="gallery-item">
+                        <img src="images/Users_story.png" alt="User Stories" class="img-fluid rounded shadow-sm">
+                        <p class="text-center mt-2 small text-muted">User Stories</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="gallery-item">
+                        <img src="images/Trello_1.png" alt="Tableau Trello (1)" class="img-fluid rounded shadow-sm">
+                        <p class="text-center mt-2 small text-muted">Tableau Trello (1)</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="gallery-item">
+                        <img src="images/Trello_2.png" alt="Tableau Trello (2)" class="img-fluid rounded shadow-sm">
+                        <p class="text-center mt-2 small text-muted">Tableau Trello (2)</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="gallery-item">
+                        <img src="images/Parcours_U_A.png" alt="Parcours Utilisateur" class="img-fluid rounded shadow-sm">
+                        <p class="text-center mt-2 small text-muted">Parcours Utilisateur</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="gallery-item">
+                        <img src="images/RFTG_BDD.png" alt="Base de données RFTG" class="img-fluid rounded shadow-sm">
+                        <p class="text-center mt-2 small text-muted">Base de données</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="mb-4">
-                <h5 class="fw-bold mb-3"><i class="fas fa-cog me-2 text-primary"></i>Fonctionnalités principales :</h5>
-                <ul class="text-muted" style="padding-left: 1.5rem;">
-                  <li class="mb-2">Gestion complète des films et DVD (ajout, modification, suppression)</li>
-                  <li class="mb-2">Système de location via application mobile</li>
-                  <li class="mb-2">Gestion des emprunts et retours</li>
-                  <li class="mb-2">Gestion des stocks et disponibilités</li>
-                  <li class="mb-2">Gestion des utilisateurs clients</li>
-                </ul>
-              </div>
+                <!-- Onglet Vidéos -->
+                <div class="tab-pane fade" id="rftg-videos" role="tabpanel">
+                  <div class="row g-4 justify-content-center">
+                    <div class="col-md-5">
+                      <h6 class="mb-3 text-center text-muted fw-bold"><i class="fas fa-desktop me-2"></i>Mario - Interface Web</h6>
+                      <video controls class="w-100 rounded shadow-sm" style="max-height: 300px; object-fit: contain;">
+                        <source src="videos/Mario.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas la lecture vidéo.
+                      </video>
+                    </div>
+                    <div class="col-md-5">
+                      <h6 class="mb-3 text-center text-muted fw-bold"><i class="fas fa-mobile-alt me-2"></i>Luigi - Application Mobile</h6>
+                      <video controls class="w-100 rounded shadow-sm" style="max-height: 300px; object-fit: contain;">
+                        <source src="videos/Luigi.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas la lecture vidéo.
+                      </video>
+                    </div>
+                  </div>
+                </div>
 
-              <div class="project-tags-wrapper text-center mb-4">
-                <span class="badge project-tag-tech mb-2">Laravel</span>
-                <span class="badge project-tag-tech mb-2">PHP</span>
-                <span class="badge project-tag-tech mb-2">Java Android</span>
-                <span class="badge project-tag-tech mb-2">JPA/ORM</span>
-                <span class="badge project-tag-tech mb-2">MySQL</span>
-                <span class="badge project-tag-tech mb-2">API REST</span>
-                <span class="badge project-tag-tech mb-2">MVC</span>
-              </div>
-
-              <div class="mt-4 pt-4 border-top text-center">
-                <p class="mb-2"><strong class="text-primary">Compétences développées :</strong></p>
-                <p class="text-muted mb-0">Architecture multi-composants, développement web et mobile, API REST, ORM, gestion de base de données, pattern MVC</p>
               </div>
             </div>
           </div>
@@ -884,6 +1007,38 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- E5 -->
+  <section id="E5" class="section-padding bg-light-beige">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">Épreuve E5</h2>
+      <div class="title-underline mx-auto mb-5"></div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="card shadow-soft border-0">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <h4 class="brand-colored mb-0">
+                  <i class="fas fa-file-pdf me-2"></i>Tableau de Synthèse
+                </h4>
+                <a href="documents/Tableau de synthèse - Epreuve E5 - BTS SIO 2024.pdf" download class="btn btn-primary rounded-pill px-4">
+                  <i class="fas fa-download me-2"></i>Télécharger
+                </a>
+              </div>
+
+              <iframe
+                src="documents/Tableau de synthèse - Epreuve E5 - BTS SIO 2024.pdf"
+                class="w-100 rounded border"
+                style="height: 700px;"
+                title="Tableau de synthèse E5">
+              </iframe>
             </div>
           </div>
         </div>

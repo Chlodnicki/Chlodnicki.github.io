@@ -519,6 +519,18 @@ section + section {
   margin-right: 0.5rem;
 }
 
+.e5-badge {
+  background-color: #ede8f5;
+  color: #5b3d8a;
+  padding: 0.35rem 0.85rem;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  display: inline-block;
+  margin-right: 0.4rem;
+  border: 1px solid #c9b8e0;
+}
+
 .project-title {
   color: var(--primary-dark);
   font-size: 2rem;
